@@ -46,9 +46,9 @@ public class ActorHelper {
             q.addEntity(Actor.class);
             
             // binding values to the placeholders in the query
-            q.setParameter("fName", a.getFirstName);
-            q.setParameter("lName", a.getLastName);
-            q.setParameter("update", a.getLastUpdate);
+            q.setParameter("fName", a.getFirstName());
+            q.setParameter("lName", a.getLastName());
+            q.setParameter("update", a.getLastUpdate());
             
             // executing the query 
             result = q.executeUpdate();

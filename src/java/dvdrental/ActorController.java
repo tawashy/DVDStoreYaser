@@ -81,8 +81,8 @@ public class ActorController implements Serializable {
             // don't dis[lay a message when the user hasn't input 
             // a first and last name
             response = " ";
-            return response;
         }
+        return response;
         
     }
 
