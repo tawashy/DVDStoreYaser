@@ -12,7 +12,7 @@ import java.util.Set;
 public class Language  implements java.io.Serializable {
 
 
-     private Byte languageId;
+     private int languageId; 
      private String name;
      private Date lastUpdate;
      private Set<Film> filmsForLanguageId = new HashSet<Film>(0);
@@ -33,11 +33,11 @@ public class Language  implements java.io.Serializable {
        this.filmsForOriginalLanguageId = filmsForOriginalLanguageId;
     }
    
-    public Byte getLanguageId() {
+    public int getLanguageId() {
         return this.languageId;
     }
     
-    public void setLanguageId(Byte languageId) {
+    public void setLanguageId(int languageId) {
         this.languageId = languageId;
     }
     public String getName() {

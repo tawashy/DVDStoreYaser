@@ -4,7 +4,7 @@
 <!-- Generated Feb 3, 2017 8:20:58 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="dvdrental.Language" table="language" catalog="sakila" optimistic-lock="version">
-        <id name="languageId" type="java.lang.Byte">
+        <id name="languageId" type="integer">
             <column name="language_id" />
             <generator class="identity" />
         </id>
